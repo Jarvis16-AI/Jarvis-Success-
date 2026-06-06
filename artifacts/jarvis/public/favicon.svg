@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#001a2e"/>
+      <stop offset="100%" stop-color="#000810"/>
+    </radialGradient>
+    <linearGradient id="stroke-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="35%" stop-color="#00d4ff"/>
+      <stop offset="65%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="outer-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="248" fill="none" stroke="rgba(0,212,255,0.15)" stroke-width="2"/>
+  <path d="M256 256C256 204 224 168 190 168C140 168 96 212 96 256C96 300 140 344 190 344C224 344 256 308 256 256C256 204 288 168 322 168C372 168 416 212 416 256C416 300 372 344 322 344C288 344 256 308 256 256Z"
+    fill="none" stroke="rgba(0,212,255,0.25)" stroke-width="32" stroke-linecap="round" filter="url(#outer-glow)"/>
+  <path d="M256 256C256 204 224 168 190 168C140 168 96 212 96 256C96 300 140 344 190 344C224 344 256 308 256 256C256 204 288 168 322 168C372 168 416 212 416 256C416 300 372 344 322 344C288 344 256 308 256 256Z"
+    fill="none" stroke="url(#stroke-grad)" stroke-width="28" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="10" fill="#00d4ff" opacity="0.9" filter="url(#glow)"/>
+</svg>

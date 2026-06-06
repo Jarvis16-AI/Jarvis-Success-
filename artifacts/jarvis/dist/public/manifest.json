@@ -1,0 +1,52 @@
+{
+  "name": "Jarvis AI",
+  "short_name": "Jarvis",
+  "description": "Your AI assistant for conversations, voice calls, and real-time interaction — powered by Groq.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "share_title",
+      "text": "share_text",
+      "url": "share_url"
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "New Chat",
+      "short_name": "Chat",
+      "description": "Start a new text conversation",
+      "url": "/",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Voice Call",
+      "short_name": "Call",
+      "description": "Start a live voice call with Jarvis",
+      "url": "/call",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Live Session",
+      "short_name": "Live",
+      "description": "Start a live voice session",
+      "url": "/live",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "en"
+}

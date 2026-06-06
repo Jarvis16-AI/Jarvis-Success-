@@ -1,0 +1,1 @@
+- [HUD Dashboard chat page](hud-dashboard.md) — chat.tsx rebuilt as full HUD dashboard; key APIs, layout decisions, and gotchas recorded.

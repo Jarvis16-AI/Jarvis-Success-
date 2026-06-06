@@ -1,0 +1,506 @@
+Create a new AI named Jarvis that is based with the following layout:
+ 
+Build a modern, mobile-responsive AI chat interface that looks like a premium mobile app (similar to Gemini).
+​Layout Requirements:
+​Header: A top navigation bar with a hamburger menu icon on the left, the name 'JARVIS' in the center, and a 'New Chat' icon on the right.
+​Sidebar: A hidden sidebar that slides in from the left when the menu icon is clicked. It should contain a 'Recent' section for chat history titles and a user profile section at the bottom.
+​Chat Area: A scrollable central area where messages appear as clean text with plenty of whitespace.
+​Bottom Input Bar: A floating input container at the bottom with:
+​A '+' button icon on the far left for attachments.
+A video call icon for the video calls 
+​A rounded text input field in the middle.
+​A microphone icon inside the right side of the input field.
+​A circular blue 'Send' arrow button to the far right.
+​Technical Specs:
+​Use a strict Dark Mode theme (deep black backgrounds, white/light gray text).
+​Use a clean, sans-serif font (like Inter or Roboto).
+​Use Lucide-icons or FontAwesome for the icons.
+​Ensure the input bar stays fixed at the bottom while the chat scrolls behind it.
+​Write this using HTML, Tailwind CSS (for styling), and Vanilla JavaScript."
+
+---
+
+1. Long-Term Memory System
+
+Your AI should remember users across conversations.
+
+What it enables
+
+Remembers names, goals, preferences
+
+Learns user habits
+
+Continues projects over days/weeks
+
+Personalized responses
+
+
+Example
+
+User says:
+
+> “I’m building a fintech app.”
+
+
+
+Weeks later:
+
+> “How’s the fintech app going?”
+
+
+
+Features to store
+
+User preferences
+
+Ongoing projects
+
+Tone preference
+
+Frequently used tools
+
+Previous conversations
+
+
+Recommended architecture
+
+Vector database
+
+Memory scoring system
+
+Context summarization
+
+Retrieval-Augmented Generation (RAG)
+
+
+Good tools:
+
+
+
+
+
+---
+
+2. Autonomous Tool Use
+
+Your AI should decide when to use tools automatically.
+
+Tools it should use
+
+Web search
+
+File reader
+
+Calculator
+
+Code execution
+
+Database access
+
+Email sender
+
+Calendar
+
+APIs
+
+
+Why this matters
+
+Without tools:
+
+> AI only talks.
+
+
+
+With tools:
+
+> AI acts.
+
+
+
+This is one of the biggest upgrades you can make.
+
+Frameworks:
+
+
+
+
+
+---
+
+3. Multi-Agent Architecture
+
+Instead of one AI, create specialized AI agents.
+
+Example agents
+
+Research Agent
+
+Coding Agent
+
+Planning Agent
+
+UI Designer Agent
+
+Debugging Agent
+
+Security Agent
+
+
+How it works
+
+A “manager AI” delegates tasks to specialized agents.
+
+This massively improves quality.
+
+Frameworks:
+
+
+
+
+---
+
+4. Voice + Real-Time Conversation
+
+Add natural speech interaction.
+
+Features
+
+Interruptions
+
+Streaming speech
+
+Real-time responses
+
+Emotional tone detection
+
+Voice personality
+
+
+Makes the AI feel:
+
+Human
+
+Fast
+
+Interactive
+
+
+Good APIs:
+
+
+
+
+
+---
+
+5. Screen & Vision Understanding
+
+Let the AI see.
+
+Capabilities
+
+Read screenshots
+
+Understand UI
+
+Analyze documents
+
+OCR
+
+Detect objects
+
+Explain charts/images
+
+
+Use cases
+
+Coding assistant
+
+Design assistant
+
+Automation
+
+Customer support
+
+
+Models:
+
+
+
+
+
+---
+
+6. Personality Engine
+
+Most AIs feel generic because they lack a stable identity.
+
+Add:
+
+Mood system
+
+Speaking style
+
+Humor level
+
+Formality control
+
+Character profile
+
+Dynamic behavior
+
+
+Advanced idea
+
+Let users choose:
+
+Mentor mode
+
+Hacker mode
+
+Teacher mode
+
+Therapist-like calm mode
+
+CEO mode
+
+
+This massively improves engagement.
+
+
+---
+
+7. Self-Reflection & Error Correction
+
+Your AI should critique itself before answering.
+
+Pipeline
+
+1. Generate answer
+
+
+2. Review answer
+
+
+3. Detect hallucinations
+
+
+4. Improve answer
+
+
+5. Send final response
+
+
+
+Benefits
+
+Better accuracy
+
+Fewer hallucinations
+
+Better reasoning
+
+
+This is a huge upgrade.
+
+Research inspiration:
+
+Anthropic constitutional-style prompting
+
+Reflection loops
+
+Tree-of-thought reasoning
+
+
+
+---
+
+8. Live Internet Research Mode
+
+Give your AI real-time internet intelligence.
+
+Features
+
+Current news
+
+Web summarization
+
+Source citation
+
+Multi-source comparison
+
+Trend analysis
+
+
+Important
+
+Teach the AI:
+
+Source ranking
+
+Credibility scoring
+
+Citation formatting
+
+
+Your AI becomes MUCH more useful when it knows current information.
+
+
+---
+
+9. Workflow Automation
+
+Turn the AI into an operator.
+
+Examples
+
+Send emails
+
+Generate reports
+
+Update spreadsheets
+
+Deploy apps
+
+Book meetings
+
+Manage tasks
+
+Automate businesses
+
+
+Stack
+
+
+
+
+This is where AI becomes economically valuable.
+
+
+---
+
+10. Adaptive Learning System
+
+Your AI should improve from usage.
+
+Learn from:
+
+User corrections
+
+Successful outputs
+
+Failed outputs
+
+User ratings
+
+Conversation patterns
+
+
+Advanced systems
+
+Preference learning
+
+Reinforcement loops
+
+Fine-tuning pipeline
+
+Retrieval updates
+
+
+This creates:
+
+> “An AI that evolves.”
+
+
+
+
+---
+
+Bonus Features (Very Powerful)
+
+Emotion Detection
+
+Detect frustration/confusion/excitement.
+
+Predictive Assistance
+
+AI suggests actions before user asks.
+
+Project Workspace Memory
+
+Persistent workspaces for coding/business/research.
+
+AI Operating System
+
+Central AI controlling apps/tools/files.
+
+Real-Time Collaboration
+
+Multiple users + AI together.
+
+Local Offline Model Support
+
+
+
+
+
+
+---
+
+Best Overall Architecture
+
+A very strong modern AI stack looks like this:
+
+Frontend
+   ↓
+API Gateway
+   ↓
+Orchestrator Agent
+   ↓
+Memory System (Vector DB)
+   ↓
+Tool Router
+   ↓
+Specialized Agents
+   ↓
+LLM Provider
+
+
+---
+
+
+
+Prioritize these first:
+
+1. Memory
+
+
+2. Tool use
+
+
+3. Web access
+
+
+4. Reflection system
+
+
+5. Multi-agent architecture
+
+
+6. Voice
+
+
+7. Vision
+
+
+8. Workflow automation
+
+​"Generate a standalone, high-quality SVG code for a futuristic, minimalist floating robot character inspired by the image provided. Use smooth, organic curves (Ceva/Bezier paths) for the body, featuring a rounded head with glowing pill-shaped eyes and a sleek torso with an infinity symbol on the chest. The aesthetic should be 'Apple-esque' with soft grey and white gradients. Ensure the SVG is responsive (viewBox set correctly) and clean so it can be used as a dynamic background element in a video call interface."
+​2. For the Automated SVG Infinity Sign (Voice-to-Notes)
+​"Create a clean, scalable SVG path for a modern infinity symbol. The stroke should have a glowing 'neon' effect or a subtle gradient. Include CSS animation code within the SVG (using animate or keyframes) that creates a 'pulsing' or 'drawing' effect to signify that the AI is actively listening and transcribing voice to notes. The design should be minimalist and match a professional UI kit."
+On the video call whenever i speak i should not worry about clicking the microphone after speaking for it to process. Whenever it hears silence it should respond. The same applies to the live section 
+
+
+
+
