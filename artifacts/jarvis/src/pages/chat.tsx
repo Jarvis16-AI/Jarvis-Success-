@@ -326,6 +326,19 @@ export default function ChatPage() {
   // Chat state
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [input, setInput] = useState("");
+const sendMessage = async (text: string) => {
+  if (!text.trim()) return;
+
+  console.log("SEND CLICKED:", text);
+
+  try {
+    // TEMP: just confirm flow works first
+    // later this will call Groq API
+
+  } catch (err) {
+    console.error("Send error:", err);
+  }
+};
   const [streamingMessages, setStreamingMessages] = useState<StreamingMessage[]>([]);
   const [isStreaming, setIsStreaming] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
@@ -1203,7 +1216,7 @@ export default function ChatPage() {
       <div className="shrink-0 overflow-hidden py-0.5" style={{ background:"rgba(0,2,6,0.98)", borderTop:"1px solid rgba(0,212,255,0.07)" }}>
         <div className="ticker-anim">
           <span style={{ fontSize:7, fontFamily:"'Orbitron',sans-serif", color:"rgba(0,212,255,0.38)", letterSpacing:"0.12em" }}>
-            JARVIS INTELLIGENCE PLATFORM &nbsp;•&nbsp; ENCRYPTED CHANNEL 7 &nbsp;•&nbsp; ALL SYSTEMS OPERATIONAL &nbsp;•&nbsp; NEURAL NETWORK PROCESSING &nbsp;•&nbsp; CONTEXTUAL ANALYSIS ACTIVE &nbsp;•&nbsp; PERIMETER SECURE &nbsp;•&nbsp; PASSIVE SCAN RUNNING &nbsp;•&nbsp; DATA INTEGRITY VERIFIED &nbsp;•&nbsp; UPLINK STABLE &nbsp;•&nbsp; MULTI-MODAL PROCESSING ENABLED &nbsp;•&nbsp; STARK TECHNOLOGIES DIVISION &nbsp;•&nbsp; PROTOCOL ENGAGED &nbsp;•&nbsp;
+            JARVIS INTELLIGENCE PLATFORM &nbsp;•&nbsp; ENCRYPTED CHANNEL 7 &nbsp;•&nbsp; ALL SYSTEMS OPERATIONAL &nbsp;•&nbsp; NEURAL NETWORK PROCESSING &nbsp;•&nbsp; CONTEXTUAL ANALYSIS ACTIVE &nbsp;•&nbsp; PERIMETER SECURE &nbsp;•&nbsp; PASSIVE SCAN RUNNING &nbsp;•&nbsp; DATA INTEGRITY VERIFIED &nbsp;•&nbsp; UPLINK STABLE &nbsp;•&nbsp; MULTI-MODAL PROCESSING ENABLED &nbsp;•&nbsp; LEX TECHNOLOGIES DIVISION &nbsp;•&nbsp; PROTOCOL ENGAGED &nbsp;•&nbsp;
           </span>
         </div>
       </div>
@@ -1250,10 +1263,11 @@ export default function ChatPage() {
             className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mb-0.5 transition-all disabled:opacity-25 disabled:cursor-not-allowed"
             style={{ background:"rgba(0,212,255,0.2)", border:"1px solid rgba(0,212,255,0.5)" }}>
             <Send size={14} style={{ color:"#00d4ff" }}/>
+            Send
           </button>
         </div>
         <p className="text-center mt-1.5" style={{ fontSize:8, color:"rgba(255,255,255,0.1)", fontFamily:"'Orbitron',sans-serif", letterSpacing:"0.1em" }}>
-          POWERED BY GROQ · RESPONSES MAY BE INACCURATE
+          POWERED BY LEX Technologies · RESPONSES MAY BE INACCURATE
         </p>
       </footer>
     </div>
